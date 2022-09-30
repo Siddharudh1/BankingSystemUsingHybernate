@@ -63,7 +63,7 @@ public class CustomerController {
     	return repo.findAll(pageable);
 	  } 
     @GetMapping("/Specification/{UserName}")
-   // //@RequestMapping (value = "/Specification/{UserName}", method = RequestMethod.GET)
+    //@RequestMapping (value = "/Specification/{UserName}", method = RequestMethod.GET)
     List findByuserName(@PathVariable String userName) {
     	return  repo.findAll(CustomerSpecificationimpl.findByuserName(userName));
     }
